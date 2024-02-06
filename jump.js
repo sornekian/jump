@@ -55,7 +55,7 @@ function checkDead() {
 
 	// the code below is if the bomb is hit horizontally or vertically
 
-	if (blockLeft < 30 && blockLeft > -30 && characterTop >= 150) {
+	if (blockLeft < 20 && blockLeft > -20 && characterTop >= 130) {
 		tryAgainButton.style.display = "block";
 		gameDiv.style.display = "none";
 
