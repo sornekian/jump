@@ -5,6 +5,7 @@ let tryAgainButton = document.getElementById("tryAgainButton");
 let gameDiv = document.getElementById("game");
 let isJumping = false;
 let score = 0;
+let intervalId;
 
 startButton.addEventListener("click", startGame);
 tryAgainButton.addEventListener("click", tryAgain);
@@ -21,9 +22,9 @@ function startGame() {
 	score = 0;
 
 	document.addEventListener("click", jump);
-	setTimeout(() => {
-		intervalId = setInterval(checkDead, 5);
-	}, 1000);
+	setInterval(checkDead, 5); // Check for collisions continuously
+
+	console.log("Game started!"); // Add this line to see if the function is being called
 }
 
 function tryAgain() {
