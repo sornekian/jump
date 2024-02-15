@@ -21,7 +21,9 @@ function startGame() {
 	score = 0;
 
 	document.addEventListener("click", jump);
-	intervalId = setInterval(checkDead, 5);
+	setTimeout(() => {
+		intervalId = setInterval(checkDead, 5);
+	}, 1000);
 }
 
 function tryAgain() {
@@ -32,9 +34,9 @@ function tryAgain() {
 function jump() {
 	if (!isJumping) {
 		isJumping = true;
-		dino.classList.add("animate");
+		dino.style.animation = "jump 300ms";
 		setTimeout(function () {
-			dino.classList.remove("animate");
+			dino.style.animation = "";
 			isJumping = false;
 			incrementScore();
 		}, 300);
