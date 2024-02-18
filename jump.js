@@ -15,7 +15,7 @@ function startGame() {
 	tryAgainButton.style.display = "none";
 	gameDiv.style.display = "block";
 
-	dino.style.top = "150px";
+	dino.style.top = "85px";
 	bomb.style.left = "480px";
 	bomb.style.animationDuration = "1.5s";
 
