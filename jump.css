@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #1a1f83;
+  background-color: #1f269b;
 }
 
 #game {
@@ -9,7 +9,8 @@ body {
   height: 200px;
   border: 1px solid black;
   margin: auto;
-  background-color: rgb(96, 96, 146);
+  margin-top: 15%;
+  background-color: rgb(159, 159, 185);
 }
 
 #dino {
